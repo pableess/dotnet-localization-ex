@@ -12,7 +12,7 @@ See https://github.com/dotnet/aspnetcore/tree/master/src/Middleware/Localization
 The package is available via NuGet.
 
 ```
-Install-Package Owin.Extensions.Localization
+Install-Package Owin.Localization
 ```
 
 ###  AspNet MVC projects
