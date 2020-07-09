@@ -17,9 +17,9 @@ namespace Owin.Extensions.Localization
         private static readonly string _uiCulturePrefix = "uic=";
 
         /// <summary>
-        /// Represent the default cookie name used to track the user's preferred culture information, which is ".AspNetCore.Culture".
+        /// Represent the default cookie name used to track the user's preferred culture information, which is ".AspNet.Culture".
         /// </summary>
-        public static readonly string DefaultCookieName = ".AspNetCore.Culture";
+        public static readonly string DefaultCookieName = ".AspNet.Culture";
 
         /// <summary>
         /// The name of the cookie that contains the user's preferred culture information.
