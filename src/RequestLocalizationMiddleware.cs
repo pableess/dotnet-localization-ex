@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Primitives;
 using Microsoft.Owin;
 
-namespace Owin.Extensions.Localization
+namespace Owin.Localization
 {
     /// <summary>
     /// Enables automatic setting of the culture for <see cref="Microsoft.Owin.OwinRequest"/>s based on information

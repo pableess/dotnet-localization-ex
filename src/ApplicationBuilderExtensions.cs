@@ -5,7 +5,7 @@
 using System;
 using Owin;
 using Microsoft.Owin;
-using Owin.Extensions.Localization;
+using Owin.Localization;
 
 namespace Owin
 {
@@ -110,7 +110,7 @@ namespace Owin
 
             if (cultures.Length == 0)
             {
-                throw new ArgumentException(Extensions.Localization.Resources.Exception_CulturesShouldNotBeEmpty);
+                throw new ArgumentException(Resources.Exception_CulturesShouldNotBeEmpty);
             }
 
             var options = new RequestLocalizationOptions()

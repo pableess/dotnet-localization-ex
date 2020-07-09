@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using Microsoft.Extensions.Primitives;
 
-namespace Owin.Extensions.Localization
+namespace Owin.Localization
 {
     /// <summary>
     /// Details about the cultures obtained from <see cref="IRequestCultureProvider"/>.

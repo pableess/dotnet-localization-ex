@@ -6,7 +6,7 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.Owin;
 
-namespace Owin.Extensions.Localization
+namespace Owin.Localization
 {
     /// <summary>
     /// Determines the culture information for a request via the configured delegate.

@@ -6,7 +6,7 @@
 using System;
 using System.Globalization;
 
-namespace Owin.Extensions.Localization
+namespace Owin.Localization
 {
     /// <summary>
     /// Details about the culture for an <see cref="Microsoft.Owin.OwinRequest"/>.

@@ -5,7 +5,7 @@
 using System.Threading.Tasks;
 using Microsoft.Owin;
 
-namespace Owin.Extensions.Localization
+namespace Owin.Localization
 {
     /// <summary>
     /// Represents a provider for determining the culture information of an <see cref="IOwinContext"/>.

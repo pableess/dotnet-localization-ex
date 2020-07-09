@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Microsoft.Net.Http.Headers;
 using Microsoft.Owin;
 
-namespace Owin.Extensions.Localization
+namespace Owin.Localization
 {
     /// <summary>
     /// Determines the culture information for a request via the value of the Accept-Language header.

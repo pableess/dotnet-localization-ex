@@ -3,7 +3,7 @@
 
 using System;
 
-namespace Owin.Extensions.Localization
+namespace Owin.Localization
 {
     /// <summary>
     /// Provides the current request's culture information.

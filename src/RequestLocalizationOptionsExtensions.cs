@@ -5,7 +5,7 @@
 
 using System;
 
-namespace Owin.Extensions.Localization
+namespace Owin.Localization
 {
     /// <summary>
     /// Extension methods for the <see cref="RequestLocalizationOptions"/>.

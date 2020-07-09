@@ -4,7 +4,7 @@
 using System.Threading.Tasks;
 using Microsoft.Owin;
 
-namespace Owin.Extensions.Localization
+namespace Owin.Localization
 {
     /// <summary>
     /// An abstract base class provider for determining the culture information of an <see cref="OwinRequest"/>.

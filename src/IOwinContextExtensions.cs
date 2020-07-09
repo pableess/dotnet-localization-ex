@@ -1,7 +1,7 @@
 using System.Globalization;
 using Microsoft.Owin;
 
-namespace Owin.Extensions.Localization
+namespace Owin.Localization
 {
     public static class IOwinContextExtensions
     {
