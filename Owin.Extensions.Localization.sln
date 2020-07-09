@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owin.Extensions.Localization", "src\Owin.Extensions.Localization.csproj", "{926D27C5-834E-4C8D-9998-29422C0D04D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc5", "Mvc5\Mvc5.csproj", "{486E105E-B339-49DC-A50A-14316354E660}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc5", "Samples\Mvc5\Mvc5.csproj", "{486E105E-B339-49DC-A50A-14316354E660}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{FD1BBEC8-8FEA-4C95-9298-B8B67D8167FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{486E105E-B339-49DC-A50A-14316354E660} = {FD1BBEC8-8FEA-4C95-9298-B8B67D8167FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {77107054-C47A-4C47-A2EE-BF915E500434}
