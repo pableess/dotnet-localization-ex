@@ -24,7 +24,7 @@ For an AspNet Mvc (.NET Framework 4.7.1 or higher) project, override the Init() 
               ctx.GetOwinContext()?.RestoreCulture();
         });
    }
-```csharp
+```
 
 
 
