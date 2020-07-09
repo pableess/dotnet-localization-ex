@@ -1,11 +1,19 @@
 # Owin.Extensions.Localization
-Port of AspNetCore localization middleware to owin middleware.  The allows a similar programming model as AspNetCore localization request providers and make it much eaiser to write custom providers that multi-target both Owin and AspNetCore.
+Port of AspNetCore localization middleware (Microsoft.AspNetCore.Localization) to owin middleware.  The allows a similar programming model as AspNetCore localization request providers making it much eaiser to write custom providers that multi-target both Owin and AspNetCore.
 
 Localization middleware sets the requests culture and ui culture based a series of pluggable request culture providers.
 
 Includes support for Accept-Header, Cookie, and Query string providers.
 
 See https://github.com/dotnet/aspnetcore/tree/master/src/Middleware/Localization for details and documentation.
+
+### Installing 
+
+The package is available via NuGet.
+
+```
+Install-Package Owin.Extensions.Localization
+```
 
 ###  AspNet MVC projects
 AspNet MVC projects require a small amount of additonal code to ensure that the assigned culture flows accross from the OWIN middleware to the AspNet request MVC pipeline, because of the way AspNet handles async Owin middleware.
