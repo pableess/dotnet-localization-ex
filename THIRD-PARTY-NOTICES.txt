@@ -1,0 +1,1 @@
+This project uses modified aspnetcore source code distributed under the same apache-2 License.
