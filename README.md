@@ -1,5 +1,5 @@
 # Owin.Extensions.Localization
-Port of AspNetCore localization middleware (Microsoft.AspNetCore.Localization) to owin middleware.  The allows a similar programming model as AspNetCore localization request providers and make it much eaiser to write custom providers that multi-target both Owin and AspNetCore.
+Port of AspNetCore localization middleware (Microsoft.AspNetCore.Localization) to owin middleware.  The allows a similar programming model as AspNetCore localization request providers making it much eaiser to write custom providers that multi-target both Owin and AspNetCore.
 
 Localization middleware sets the requests culture and ui culture based a series of pluggable request culture providers.
 
