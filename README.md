@@ -20,7 +20,7 @@ For an AspNet Mvc (.NET Framework 4.7.1 or higher) project, override the Init() 
         // flow owin culture to every aspnet step 
         this.OnExecuteRequestStep((ctx, step) =>
         {
-           if (ctx.Items.Contains("owin.Environment"))
+           if (ctx.Items.Contains(RequestLocalizationMiddleware.OwinEnvironmentKey))
               ctx.GetOwinContext()?.RestoreCulture();
         });
    }
