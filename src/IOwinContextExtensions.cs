@@ -11,17 +11,33 @@ namespace Owin.Extensions.Localization
         /// <param name="owinContext"></param>
         public static void RestoreCulture(this IOwinContext owinContext)
         {
-            object c = null;
-            if (owinContext?.Environment.TryGetValue(RequestLocalizationMiddleware.CultureKey, out c) == true)
-            {
-                CultureInfo.CurrentCulture = (CultureInfo)c;
-            }
+            var requestCulture = owinContext.GetRequestCulture();
 
-            object uic = null;
-            if (owinContext?.Environment.TryGetValue(RequestLocalizationMiddleware.UICultureKey, out uic) == true)
+            if (requestCulture != null)
             {
-                CultureInfo.CurrentUICulture = (CultureInfo)uic;
+                CultureInfo.CurrentCulture = requestCulture.Culture;
+                CultureInfo.CurrentUICulture = requestCulture.UICulture;
             }
+        }
+
+        /// <summary>
+        /// Gets the request culture from the owin 
+        /// </summary>
+        /// <param name="owinContext"></param>
+        /// <returns></returns>
+        public static RequestCulture GetRequestCulture(this IOwinContext owinContext)
+        {
+            return owinContext?.Get<IRequestCultureFeature>(RequestCultureFeature.RequestCultureFeatureKey)?.RequestCulture;
+        }
+
+        /// <summary>
+        /// Gets the request culture feature from the owin context
+        /// </summary>
+        /// <param name="owinContext"></param>
+        /// <returns></returns>
+        public static IRequestCultureFeature GetRequestCultureFeature(this IOwinContext owinContext)
+        {
+            return owinContext?.Get<IRequestCultureFeature>(RequestCultureFeature.RequestCultureFeatureKey);
         }
     }
 }

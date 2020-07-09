@@ -10,6 +10,8 @@ namespace Owin.Extensions.Localization
     /// </summary>
     public class RequestCultureFeature : IRequestCultureFeature
     {
+        public const string RequestCultureFeatureKey = "RequestCultureFeature";
+
         /// <summary>
         /// Creates a new <see cref="RequestCultureFeature"/> with the specified <see cref="Localization.RequestCulture"/>.
         /// </summary>

@@ -8,6 +8,7 @@
     <NoWarn>$(NoWarn);CS1591</NoWarn>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>owin;localization;middleware</PackageTags>
+    <PackageProjectUrl>https://github.com/pableess/Owin.Extensions.Localization/</PackageProjectUrl>
     <Version>0.9.0</Version>
   </PropertyGroup>
 

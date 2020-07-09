@@ -18,8 +18,6 @@ namespace Owin.Extensions.Localization
     /// </summary>
     public class RequestLocalizationMiddleware : OwinMiddleware
     {
-        public const string CultureKey = "Culture";
-        public const string UICultureKey = "UICulture";
         public const string OwinEnvironmentKey = "owin.Environment";
 
         private static readonly int MaxCultureFallbackDepth = 5;
@@ -29,7 +27,7 @@ namespace Owin.Extensions.Localization
         /// <summary>
         /// Creates a new <see cref="RequestLocalizationMiddleware"/>.
         /// </summary>
-        /// <param name="next">The <see cref="RequestDelegate"/> representing the next middleware in the pipeline.</param>
+        /// <param name="next">The <see cref="OwinMiddleware"/> representing the next middleware in the pipeline.</param>
         /// <param name="options">The <see cref="RequestLocalizationOptions"/> representing the options for the. 
         /// <see cref="RequestLocalizationMiddleware"/></param>
         public RequestLocalizationMiddleware(OwinMiddleware next, RequestLocalizationOptions options) :base(next)
@@ -118,8 +116,11 @@ namespace Owin.Extensions.Localization
                 }
             }
 
-            context.Set<IRequestCultureFeature>("RequestCultureFeature", new RequestCultureFeature(requestCulture, winningProvider));
+            // set the request culture feature on the owin context
+            // this can be used to restore the culture if the synchronization context changes such as an AspNet event (ie MVC pipeline) 
+            context.Set<IRequestCultureFeature>(RequestCultureFeature.RequestCultureFeatureKey, new RequestCultureFeature(requestCulture, winningProvider));
 
+            // set the current thread culture
             SetCurrentThreadCulture(requestCulture);
 
             if (_options.ApplyCurrentCultureToResponseHeaders)
