@@ -7,7 +7,7 @@ Includes support for Accept-Header, Cookie, and Query string providers.
 
 See https://github.com/dotnet/aspnetcore/tree/master/src/Middleware/Localization for details and documentation.
 
-#For AspNet MVC projects
+###  AspNet MVC projects
 AspNet MVC projects require a small amount of additonal code to ensure that the assigned culture flows accross from the OWIN middleware to the AspNet request MVC pipeline, because of the way AspNet handles async Owin middleware.
 
 For an AspNet Mvc (.NET Framework 4.7.1 or higher) project, override the Init() of the HttpApplication class as follows:
