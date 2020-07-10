@@ -1,7 +1,7 @@
 <Project>
   <PropertyGroup>
    <Authors>Paul Bleess</Authors>
-    <PackageProjectUrl>https://github.com/pableess/Owin.Localization/</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/pableess/dotnet-localization-ex</PackageProjectUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
