@@ -8,7 +8,7 @@ using Unity;
 
 namespace Owin.Localization.Unity
 {
-    public class RequestCultureInjectionProviderAdapterFactory : IRequestCultureProviderAdapterFactory
+    internal class RequestCultureInjectionProviderAdapterFactory : IRequestCultureProviderAdapterFactory
     {
 
         private readonly IUnityContainer unityContainer;

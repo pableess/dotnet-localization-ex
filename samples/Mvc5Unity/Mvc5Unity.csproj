@@ -224,11 +224,11 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Core\Owin.Localization.csproj">
+    <ProjectReference Include="..\..\src\Owin\Owin.Localization.csproj">
       <Project>{4f41d08f-b06f-493d-86ae-9b66fb56656c}</Project>
       <Name>Owin.Localization</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\Unity\Owin.Localization.Unity.csproj">
+    <ProjectReference Include="..\..\src\Owin.Unity\Owin.Localization.Unity.csproj">
       <Project>{7a210ac7-40ce-4223-a4d0-c03795a82841}</Project>
       <Name>Owin.Localization.Unity</Name>
     </ProjectReference>

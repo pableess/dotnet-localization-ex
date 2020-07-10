@@ -16,7 +16,7 @@
   </PropertyGroup>
 
   <ItemGroup Condition="'$(Packaging)' != 'true'">
-    <ProjectReference Include="..\Core\Owin.Localization.csproj" />
+    <ProjectReference Include="..\Owin\Owin.Localization.csproj" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(Packaging)' == 'true'">

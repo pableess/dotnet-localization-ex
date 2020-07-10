@@ -12,19 +12,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owin.Localization", "src\Core\Owin.Localization.csproj", "{4F41D08F-B06F-493D-86AE-9B66FB56656C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owin.Localization", "src\Owin\Owin.Localization.csproj", "{4F41D08F-B06F-493D-86AE-9B66FB56656C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owin.Localization.Autofac", "src\Autofac\Owin.Localization.Autofac.csproj", "{8F210ACB-BECA-4CBE-A603-C434FBEA81C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owin.Localization.Autofac", "src\Owin.Autofac\Owin.Localization.Autofac.csproj", "{8F210ACB-BECA-4CBE-A603-C434FBEA81C4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owin.Localization.Unity", "src\Unity\Owin.Localization.Unity.csproj", "{7A210AC7-40CE-4223-A4D0-C03795A82841}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owin.Localization.Unity", "src\Owin.Unity\Owin.Localization.Unity.csproj", "{7A210AC7-40CE-4223-A4D0-C03795A82841}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc5AutoFac", "samples\Mvc5Autofac\Mvc5AutoFac.csproj", "{19B0D094-674A-42D7-85DA-43D0F2E9A8F1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc5Unity", "samples\Mvc5Unity\Mvc5Unity.csproj", "{8C42250C-64B9-4D04-8F48-3939D32666EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Localization.DependencyInjection", "src\AspNetCore.Localization.DependencyInjection\AspNetCore.Localization.DependencyInjection.csproj", "{474E25A4-71E9-45B3-9A1E-4AFD5BD77125}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Localization.DependencyInjection", "src\AspNetCore\AspNetCore.Localization.DependencyInjection.csproj", "{474E25A4-71E9-45B3-9A1E-4AFD5BD77125}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc6", "Mvc6\Mvc6.csproj", "{4F1C8B46-C209-4303-AE8C-647100D7BE93}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc6", "Samples\Mvc6\Mvc6.csproj", "{4F1C8B46-C209-4303-AE8C-647100D7BE93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

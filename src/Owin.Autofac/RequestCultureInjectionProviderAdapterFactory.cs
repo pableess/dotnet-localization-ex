@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Owin.Localization.Autofac
 {
-    public class RequestCultureInjectionProviderAdapterFactory : IRequestCultureProviderAdapterFactory
+    internal class RequestCultureInjectionProviderAdapterFactory : IRequestCultureProviderAdapterFactory
     {
         public IRequestCultureProvider CreateAdapter<TCultureProvider>() where TCultureProvider : IRequestCultureProvider
         {

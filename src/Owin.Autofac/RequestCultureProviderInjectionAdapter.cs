@@ -11,7 +11,7 @@ namespace Owin.Localization.Autofac
     /// This allows for injecting in dependencies like shared cache or database connections, http clients etc using DI best practices
     /// </summary>
     /// <typeparam name="TCultureProvider"></typeparam>
-    public class RequestCultureProviderInjectionAdapter<TCultureProvider> : RequestCultureProviderInjectionAdapterBase<TCultureProvider>
+    internal class RequestCultureProviderInjectionAdapter<TCultureProvider> : RequestCultureProviderInjectionAdapterBase<TCultureProvider>
         where TCultureProvider : IRequestCultureProvider
     {
         protected override TCultureProvider ResolveProvider(IOwinContext httpContext)

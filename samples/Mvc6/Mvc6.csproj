@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\AspNetCore.Localization.DependencyInjection\AspNetCore.Localization.DependencyInjection.csproj" />
+    <ProjectReference Include="..\..\src\AspNetCore\AspNetCore.Localization.DependencyInjection.csproj" />
   </ItemGroup>
+
+  
 
 </Project>

@@ -223,12 +223,12 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Autofac\Owin.Localization.Autofac.csproj">
+    <ProjectReference Include="..\..\src\Owin.Autofac\Owin.Localization.Autofac.csproj">
       <Project>{8f210acb-beca-4cbe-a603-c434fbea81c4}</Project>
       <Name>Owin.Localization.Autofac</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\Core\Owin.Localization.csproj">
-      <Project>{4F41D08F-B06F-493D-86AE-9B66FB56656C}</Project>
+    <ProjectReference Include="..\..\src\Owin\Owin.Localization.csproj">
+      <Project>{4f41d08f-b06f-493d-86ae-9b66fb56656c}</Project>
       <Name>Owin.Localization</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Product>Dependency Injection for Microsoft.AspNetCore.Localization.IRequestCultureProvider instances</Product>
+    <TargetFrameworks>netcoreapp3.1;netcoreapp3.0;netcoreapp2.2</TargetFrameworks>
+    <Description>
+      Allows for the resolution of IRequestCultureProvider instances via the service provider during each request.  This allows standard dependency resolution of RequestCultureProvider depencies for things like DBConnection, Http Clients, Caches, etc. 
+    </Description>
+
+    <PackageTags>aspnetcore;localization;dependency injection</PackageTags>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+
+  <ItemGroup Condition="$(TargetFramework) == 'netcoreapp2.2'">
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="$(TargetFramework) != 'netcoreapp2.2'">
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+</Project>
