@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Product>Autofac dependency injection support for owin localization providers</Product>
+   
+    <Description>
+       Adds support to allow IRequestCultureProviders instances to be resolve during the request using Autofac container.
+       This can be useful if the provider has external dependencies such as database connections etc that are best handled via DI
+    </Description>
+    <TargetFramework>net462</TargetFramework>
+    <PackageTags>owin;localization;middleware;autofac</PackageTags>
+    <PackageProjectUrl>https://github.com/pableess/Owin.Localization/</PackageProjectUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Owin" Version="5.0.1" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(Packaging)' != 'true'">
+    <ProjectReference Include="..\Core\Owin.Localization.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(Packaging)' == 'true'">
+    <PackageReference Include="Owin.Localization" Version=" 1.0.*" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+   <Authors>Paul Bleess</Authors>
+    <PackageProjectUrl>https://github.com/pableess/Owin.Localization/</PackageProjectUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+</Project>

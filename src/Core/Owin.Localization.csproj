@@ -2,16 +2,12 @@
 
   <PropertyGroup>
     <Product>Owin Localization Middleware</Product>
-    <Authors>Paul Bleess</Authors>
+   
     <Description>Port of AspNetCore localization middleware to Owin middleware.
      Uses provider model with built in support for automatically applying culture information to HTTP requests. Culture information can be specified in the HTTP header, query string, cookie, or custom source.</Description>
     <TargetFramework>net462</TargetFramework>
-    <NoWarn>$(NoWarn);CS1591</NoWarn>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+ 
     <PackageTags>owin;localization;middleware</PackageTags>
-    <PackageProjectUrl>https://github.com/pableess/Owin.Localization/</PackageProjectUrl>
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    
     <Version>1.0.0</Version>
   </PropertyGroup>
 
