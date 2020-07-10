@@ -1,4 +1,4 @@
-# dotnet localaization ex
+# dotnet localization ex
 
 This project contains the following localization enhancements for .NET web applications.
 
