@@ -3,7 +3,7 @@
 This project contains the following localization enhancements for .NET web applications.
 
 1. Adds dependency injection support for IRequestCultureProviders in AspNetCore 
-    - Why? The AspNetCore Localization middleware allows only the addition of Provider instances to the RequestCultureOptions. For simple providers this is not a problem because the culture can be determined from information on the request. However, more complex custom providers may use external systems like databases, web services, distributed caches etc. This allows the providers to be injected per request allows these dependencies to work much better with other Dependency Injection oriented services.
+    - Why? The AspNetCore Localization middleware allows only the addition of Provider instances to the RequestCultureOptions. For simple providers this is not a problem because the culture can be determined from information on the request. However, more complex custom providers may use external systems like databases, web services, distributed caches etc. This allows the providers to be injected per request, which allows these dependencies to work much better with other Dependency Injection oriented services.
 
 2. Provides a port of AspNetCore localization middleware (Microsoft.AspNetCore.Localization) to owin middleware.  
     - This allows a similar programming model as AspNetCore localization request providers making it much eaiser to write custom providers that multi-target both Owin and AspNetCore.  This support also contains support for dependency injection of the providers.
